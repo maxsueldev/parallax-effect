@@ -2,7 +2,7 @@ header {
     background-image: url('../../img/sections/header-mobile.jpg');
     background-position: center;
     padding: 2.8rem 0;
-    background-attachment: initial;
+    background-attachment: initial !important;
 }
 
 .lista-navbar {
