@@ -1,5 +1,4 @@
 @import url('./imports/header.css');
-@import url('./imports/intro.css');
 @import url('./imports/sobre.css');
 @import url('./imports/design.css');
 @import url('./imports/curriculo.css');
@@ -29,7 +28,7 @@
 
 body, html {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     min-height: 400px;
     color: var(--branco);
     font-family: Boiling-BlackDemo, Arial, Sans-serif;
@@ -59,7 +58,7 @@ li {
     display: none;
 }
 
-.intro, .sobre, .design, .curriculo, .arts, footer {
+header, .sobre, .design, .curriculo, .arts, footer {
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
