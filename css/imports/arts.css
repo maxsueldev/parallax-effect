@@ -1,0 +1,23 @@
+.arts {
+    display: flex;
+}
+
+.art1 {
+    width: 50%;
+    height: 100vh;
+    background-image: url('../../img/sections/art-left-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    border-right: 3px solid var(--border1);
+}
+
+.art2 {
+    width: 50%;
+    height: 100vh;
+    background-image: url('../../img/sections/art-right-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-left: 3px solid var(--border1);
+}
