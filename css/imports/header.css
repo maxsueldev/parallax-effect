@@ -14,3 +14,7 @@ header {
     font-size: 2.2rem;
     font-weight: 600;
 }
+
+header .arrow {
+    bottom: 11% !important;
+}
