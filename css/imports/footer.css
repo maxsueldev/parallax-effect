@@ -1,6 +1,6 @@
 footer {
     background-image: url('../../img/sections/footer-mobile.jpg');
-    background-position: center;
+    background-position: right;
     color: var(--preto);
     padding: 30px 30px;
 }
