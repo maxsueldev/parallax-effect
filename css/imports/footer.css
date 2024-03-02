@@ -3,6 +3,19 @@ footer {
     background-position: right;
     color: var(--preto);
     padding: 30px 30px;
+    z-index: 1;
+}
+
+footer::after {
+    content: '';
+    background-color: var(--branco);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .3;
+    z-index: -1;
 }
 
 footer p {
@@ -10,12 +23,12 @@ footer p {
 }
 
 .motivacional {
-    margin-top: 4rem;
+    margin-top: 1.5rem;
 }
 
 .motivacional .frase {
     font-size: 1.8rem;
-    line-height: 2.2rem !important;
+    line-height: 2.4rem !important;
 }
 
 .motivacional .autor {
@@ -33,4 +46,16 @@ footer p {
     bottom: 1rem;
     right: 5px;
     padding: 0 10px;
+}
+
+@media (481px <= width <= 767px) {
+    .motivacional {
+        text-align: center;
+    }
+}
+
+@media (768px <= width <= 1025px) {
+    footer {
+        background-image: url('../../img/sections/footer.jpg');
+    }    
 }

@@ -52,3 +52,9 @@ header {
 header .arrow {
     bottom: 10% !important;
 }
+
+@media (768px <= width <= 1025px) {
+    header {
+        background-image: url('../../img/sections/header.jpg');
+    }    
+}

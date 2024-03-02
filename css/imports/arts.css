@@ -22,3 +22,39 @@
     background-position: center;
     /* border-left: 3px solid var(--border1); */
 }
+
+@media (481px <= width <= 767px) {
+    .arts {
+        flex-direction: row;
+    }
+    
+    .art1 {
+        width: 50%;
+        background-position: 75%;
+        border-right: 3px solid var(--border1);
+    }
+    
+    .art2 {
+        width: 50%;
+        border-left: 3px solid var(--border1);
+    }
+}
+
+@media (768px <= width <= 1025px) {
+    .arts {
+        flex-direction: row;
+    }
+    
+    .art1 {
+        width: 50%;
+        background-position: 75%;
+        border-right: 3px solid var(--border1);
+        background-image: url('../../img/sections/art-left.jpg');
+    }
+    
+    .art2 {
+        width: 50%;
+        border-left: 3px solid var(--border1);
+        background-image: url('../../img/sections/art-right.jpg');
+    }
+}

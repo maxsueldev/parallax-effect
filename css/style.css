@@ -29,7 +29,7 @@
 body, html {
     width: 100%;
     height: 100%;
-    min-height: 400px;
+    min-height: 560px !important;
     color: var(--branco);
     font-family: Nephilm, Arial, Sans-serif;
 }
@@ -66,7 +66,7 @@ p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 45px;
+    width: 50px;
     z-index: 99;
     /* display: none; */
 }
@@ -74,6 +74,7 @@ p {
 header, .sobre, .design, .curriculo, .arts, footer {
     width: 100%;
     height: 100vh;
+    min-height: 460px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -82,7 +83,7 @@ header, .sobre, .design, .curriculo, .arts, footer {
 
 .content {
     background-color: var(--bg-content);
-    opacity: 0.92;
+    opacity: 0.7;
     padding: 60px 30px;
     /* position: absolute; */
 }
@@ -124,4 +125,73 @@ header, .sobre, .design, .curriculo, .arts, footer {
     display: inline-block;
     padding: 16px 30px;
     margin: 20px 0;
+}
+
+@media (481px <= width <= 767px) {
+    .arrowToUp {
+        width: 60px;
+    }
+}
+
+@media (768px <= width <= 1025px) {
+    /* h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        font-weight: 100;
+        letter-spacing: .1rem;
+    } */
+    
+    .arrow {  
+        bottom: 6%;
+    }
+
+    .arrowToUp {
+        width: 60px;
+    }
+    
+    .content {
+        /* padding: 60px 30px; */
+        position: absolute;
+    }
+    
+    .content-bottom {
+        bottom: 0;
+        /* padding: 90px 0; */
+    }
+    
+    .content-lateral {
+        width: 36%; 
+        /* padding: 80px 60px; */
+    }
+    
+    .content-right {
+        right: 0;
+        border-top: none;
+        border-left: 6px solid var(--border2);
+    }
+    
+    .content-left {
+        left: 0;
+        border-top: none;
+        border-right: 6px solid var(--border3);
+    }
+    
+    /* .btn {
+        background-color: var(--border1);
+        color: var(--branco);
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 16px 30px;
+        margin: 20px 0;
+    } */
+}
+
+@media (1026px <= width) {
+    
 }
