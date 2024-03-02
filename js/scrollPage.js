@@ -13,6 +13,8 @@ $(document).ready(function () {
 		});
 	});
 
+	$('.arrowToUp').fadeOut(0);
+
     // esconde e mostra o btn to top
     $(window).scroll(function () {
         if ($(this).scrollTop() > 160) { // distancia que tem que rolar antes de aparecer
