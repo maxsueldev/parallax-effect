@@ -1,4 +1,9 @@
 .curriculo {
     background-image: url('../../img/sections/curriculo-mobile.jpg');
     background-position: center;
+    height: fit-content !important;
+}
+
+.curriculo p {
+    margin: 1rem 0;
 }

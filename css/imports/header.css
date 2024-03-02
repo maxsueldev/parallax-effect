@@ -1,18 +1,52 @@
 header {
     background-image: url('../../img/sections/header-mobile.jpg');
     background-position: center;
-    padding: 2.8rem 0;
+    padding: 1.5rem 0;
+}
+
+.menu-hamburger {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: .8rem;
+    margin: 0 auto;
+}
+
+.menu-hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--preto);
 }
 
 .lista-navbar {
-    display: none;
-    justify-content: center;
-    gap: 6rem;
+    position: relative;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+    transition: height .6s ease-in;
+    margin-top: 1.6rem;
 }
 
 .lista-navbar li a {
     font-size: 2.2rem;
     font-weight: 600;
+}
+
+.menu-hamburger.active {
+    border: 2px solid var(--border2);
+}
+
+.menu-hamburger.active span {
+    background-color: var(--border2);
+}
+
+.menu-hamburger.active + nav .lista-navbar {
+    height: 160px;
 }
 
 header .arrow {

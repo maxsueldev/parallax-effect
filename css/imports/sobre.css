@@ -1,4 +1,9 @@
 .sobre {
     background-image: url('../../img/sections/sobre-mobile.jpg');
     background-position: top;
+    height: fit-content !important;
+}
+
+.sobre p {
+    margin: 1rem 0;
 }

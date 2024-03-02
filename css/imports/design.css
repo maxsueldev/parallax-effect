@@ -1,4 +1,9 @@
 .design {
     background-image: url('../../img/sections/design-mobile.jpg');
     background-position: center;
+    height: fit-content !important;
+}
+
+.design p {
+    margin: 1rem 0;
 }
