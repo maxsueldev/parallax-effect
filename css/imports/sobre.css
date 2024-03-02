@@ -2,10 +2,22 @@
     background-image: url('../../img/sections/sobre-mobile.jpg');
     background-position: top;
     height: fit-content !important;
+    z-index: 1;
 }
 
-.sobre p {
-    margin: 1rem 0;
+.sobre::after {
+    content: '';
+    background-color: var(--bg-content);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    opacity: .7;
+    z-index: -1;
+}
+
+.sobre p, h1 {
+    margin: .6rem 0;
 }
 
 @media (768px <= width <= 1025px) {
@@ -15,7 +27,16 @@
         height: 100vh !important;
     }
 
+    .sobre::after {
+        height: 80%;
+    }
+
     .sobre .container {
         display: flex;
+        gap: 1.2rem;
+    }
+
+    .sobre h1 {
+        font-size: 1.4rem;
     }
 }

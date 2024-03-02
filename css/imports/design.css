@@ -2,6 +2,19 @@
     background-image: url('../../img/sections/design-mobile.jpg');
     background-position: left;
     height: fit-content !important;
+    z-index: 1;
+}
+
+.design::after {
+    content: '';
+    background-color: var(--bg-content);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    opacity: .7;
+    z-index: -1;
 }
 
 .design p {
@@ -13,5 +26,9 @@
         background-image: url('../../img/sections/design.jpg');
         /* background-position: left; */
         height: 100vh !important;
+    }
+
+    .design::after {
+        width: 55%;
     }
 }
