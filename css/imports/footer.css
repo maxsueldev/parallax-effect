@@ -9,15 +9,25 @@ footer p {
     line-height: 1.2rem !important;
 }
 
-.frase .autor {
+.motivacional {
+    margin-top: 5rem;
+}
+
+.motivacional .frase {
+    font-size: 1.4rem;
+    line-height: 1.7rem !important;
+}
+
+.motivacional .autor {
+    font-size: 1rem;
     text-align: center;
-    font-size: .8rem;
-    margin-top: .7rem;
+    margin-top: 1rem;
 }
 
 .copyright {
     font-size: .75rem;
     line-height: .95rem !important;
+    text-align: right;
     position: absolute;
     bottom: 1rem;
     right: 5px;
