@@ -32,3 +32,22 @@
         width: 55%;
     }
 }
+
+@media (1026px <= width) {
+    .curriculo {
+        background-image: url('../../img/sections/curriculo.jpg');
+        background-attachment: fixed !important;
+        /* background-position: center; */
+        height: 100vh !important;
+    }
+
+    .curriculo::after {
+        width: 50%;
+    }
+}
+
+@media (1281px <= width) {
+    .curriculo::after {
+        width: 36%;
+    }
+}

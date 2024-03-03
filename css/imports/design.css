@@ -26,9 +26,32 @@
         background-image: url('../../img/sections/design.jpg');
         /* background-position: left; */
         height: 100vh !important;
+        display: flex;
+        align-items: center;
     }
 
     .design::after {
         width: 55%;
+    }
+}
+
+@media (1026px <= width) {
+    .design {
+        background-image: url('../../img/sections/design.jpg');
+        background-attachment: fixed !important;
+        /* background-position: left; */
+        height: 100vh !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .design::after {
+        width: 50%;
+    }
+}
+
+@media (1281px <= width) {
+    .design::after {
+        width: 36%;
     }
 }

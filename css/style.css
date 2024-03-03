@@ -73,7 +73,7 @@ p {
 header, .sobre, .design, .curriculo, .arts, footer {
     width: 100%;
     height: 100vh;
-    min-height: 560px;
+    min-height: 480px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -131,18 +131,15 @@ header, .sobre, .design, .curriculo, .arts, footer {
 }
 
 @media (768px <= width <= 1025px) {
-    /* h1 {
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 2rem;
+    h1 {
+        font-size: 2.7rem;
+        margin-bottom: 2.2rem;
     }
     
     p {
-        font-size: 1rem;
-        line-height: 1.6rem;
-        font-weight: 100;
-        letter-spacing: .1rem;
-    } */
+        font-size: 1.2rem;
+        line-height: 2rem;
+    } 
     
     .arrow {  
         bottom: 6%;
@@ -151,10 +148,15 @@ header, .sobre, .design, .curriculo, .arts, footer {
     .arrowToUp {
         width: 60px;
     }
+
+    header, .sobre, .design, .curriculo, .arts, footer {
+        min-height: 720px;
+    }
     
     .content {
-        /* padding: 60px 30px; */
         position: absolute;
+        display: flex;
+        align-items: center;
     }
     
     .content-bottom {
@@ -178,17 +180,77 @@ header, .sobre, .design, .curriculo, .arts, footer {
         border-top: none;
         border-right: 6px solid var(--border3);
     }
-    
-    /* .btn {
-        background-color: var(--border1);
-        color: var(--branco);
-        text-transform: uppercase;
-        display: inline-block;
-        padding: 16px 30px;
-        margin: 20px 0;
-    } */
 }
 
 @media (1026px <= width) {
+    h1 {
+        font-size: 3.6rem;
+        margin-bottom: 2.2rem;
+    }
     
+    p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    } 
+    
+    .arrow {  
+        bottom: 6%;
+    }
+
+    .arrowToUp {
+        width: 70px;
+    }
+
+    header, .sobre, .design, .curriculo, .arts, footer {
+        min-height: 900px;
+    }
+    
+    .content {
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+    
+    .content-bottom {
+        bottom: 0;
+        height: 75%;
+    }
+    
+    .content-lateral {
+        width: 50%; 
+        padding: 30px 46px;
+    }
+    
+    .content-right {
+        right: 0;
+        border-top: none;
+        border-left: 6px solid var(--border2);
+    }
+    
+    .content-left {
+        left: 0;
+        border-top: none;
+        border-right: 6px solid var(--border3);
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        padding: 26px 50px;
+        margin: 20px 0;
+    }
+}
+
+@media (1281px <= width) {
+    .arrowToUp {
+        width: 85px;
+    }
+
+    .content-lateral {
+        width: 36%; 
+        padding: 30px 50px;
+    }
+
+    .content-bottom {
+        height: 60%;
+    }
 }

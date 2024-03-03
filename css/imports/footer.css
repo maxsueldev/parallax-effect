@@ -34,7 +34,7 @@ footer p {
 .motivacional .autor {
     font-size: 1.1rem;
     font-style: italic;
-    text-align: center;
+    text-align: right;
     margin-top: 1rem;
 }
 
@@ -49,6 +49,11 @@ footer p {
 }
 
 @media (481px <= width <= 767px) {
+    footer {
+        display: flex;
+        align-items: center;
+    }   
+
     .motivacional {
         text-align: center;
     }
@@ -57,5 +62,56 @@ footer p {
 @media (768px <= width <= 1025px) {
     footer {
         background-image: url('../../img/sections/footer.jpg');
+        display: flex;
+        align-items: center;
     }    
+
+    .motivacional {
+        text-align: center;
+        padding: 7rem;
+    }
+
+    .motivacional .frase {
+        font-size: 2.4rem;
+        line-height: 3rem !important;
+    }
+    
+    .motivacional .autor {
+        font-size: 1.4rem;
+        text-align: right;
+        margin-top: 1.4rem;
+    }
+    
+    .copyright {
+        font-size: 1rem;
+    }
+}
+
+@media (1026px <= width) {
+    footer {
+        background-image: url('../../img/sections/footer.jpg');
+        background-attachment: fixed !important;
+        display: flex;
+        align-items: center;
+    }    
+
+    .motivacional {
+        text-align: center;
+        padding: 7rem;
+    }
+
+    .motivacional .frase {
+        font-size: 3rem;
+        line-height: 3.8rem !important;
+    }
+    
+    .motivacional .autor {
+        font-size: 2rem;
+        text-align: right;
+        margin-top: 2.4rem;
+    }
+    
+    .copyright {
+        font-size: 1.5rem;
+    }
 }

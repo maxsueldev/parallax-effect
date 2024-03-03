@@ -37,6 +37,34 @@
     }
 
     .sobre h1 {
-        font-size: 1.4rem;
+        font-size: 1.9rem;
+    }
+}
+
+@media (1026px <= width) {
+    .sobre {
+        background-image: url('../../img/sections/sobre.jpg');
+        /* background-position: top; */
+        height: 100vh !important;
+        background-attachment: fixed !important;
+    }
+
+    .sobre::after {
+        height: 75%;
+    }
+
+    .sobre .container {
+        display: flex;
+        gap: 1.6rem;
+    }
+
+    .sobre h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (1281px <= width) {
+    .sobre::after {
+        height: 60%;
     }
 }
