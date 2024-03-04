@@ -51,7 +51,7 @@ h1 {
 
 p {
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     font-weight: 100;
     letter-spacing: .1rem;
 }
@@ -74,7 +74,7 @@ p {
 header, .sobre, .design, .curriculo, .arts, footer {
     width: 100%;
     height: 100vh;
-    min-height: 480px;
+    min-height: 460px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -134,20 +134,15 @@ header, .sobre, .design, .curriculo, .arts, footer {
 
 @media (481px <= width <= 767px) {
     .arrowToUp {
-        width: 60px;
+        width: 55px;
     }
 }
 
-@media (768px <= width <= 1025px) {
+@media (768px <= width <= 1024px) {
     h1 {
         font-size: 2.7rem;
         margin-bottom: 2.2rem;
     }
-    
-    p {
-        font-size: 1.2rem;
-        line-height: 2rem;
-    } 
     
     .arrow {  
         bottom: 6%;
@@ -158,7 +153,7 @@ header, .sobre, .design, .curriculo, .arts, footer {
     }
 
     header, .sobre, .design, .curriculo, .arts, footer {
-        min-height: 720px;
+        min-height: 600px;
     }
     
     .content {
@@ -188,17 +183,26 @@ header, .sobre, .design, .curriculo, .arts, footer {
         border-top: none;
         border-right: 6px solid var(--border3);
     }
+
+    .btn {
+        transition: all .4s ease-in;
+    }
+
+    .btn:hover {
+        background-color: var(--border2);
+        padding: 16px 46px;
+    }
 }
 
-@media (1026px <= width) {
+@media (1025px <= width) {
     h1 {
-        font-size: 3.6rem;
+        font-size: 2.7rem;
         margin-bottom: 2.2rem;
     }
     
     p {
-        font-size: 1.6rem;
-        line-height: 2.5rem;
+        font-size: 1rem;
+        line-height: 1.8rem;
     } 
     
     .arrow {  
@@ -206,11 +210,11 @@ header, .sobre, .design, .curriculo, .arts, footer {
     }
 
     .arrowToUp {
-        width: 70px;
+        width: 60px;
     }
 
     header, .sobre, .design, .curriculo, .arts, footer {
-        min-height: 900px;
+        min-height: 520px;
     }
     
     .content {
@@ -242,15 +246,20 @@ header, .sobre, .design, .curriculo, .arts, footer {
     }
 
     .btn {
-        font-size: 1.5rem;
-        padding: 26px 50px;
+        padding: 20px 32px;
         margin: 20px 0;
+        transition: all .4s ease-in;
+    }
+
+    .btn:hover {
+        background-color: var(--border2);
+        padding: 16px 46px;
     }
 }
 
 @media (1281px <= width) {
     .arrowToUp {
-        width: 85px;
+        width: 65px;
     }
 
     .content-lateral {

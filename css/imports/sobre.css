@@ -20,7 +20,7 @@
     margin: .6rem 0;
 }
 
-@media (768px <= width <= 1025px) {
+@media (768px <= width <= 1024px) {
     .sobre {
         background-image: url('../../img/sections/sobre.jpg');
         /* background-position: top; */
@@ -38,10 +38,11 @@
 
     .sobre h1 {
         font-size: 1.9rem;
+        text-align: start;
     }
 }
 
-@media (1026px <= width) {
+@media (1025px <= width) {
     .sobre {
         background-image: url('../../img/sections/sobre.jpg');
         /* background-position: top; */
@@ -59,7 +60,7 @@
     }
 
     .sobre h1 {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 }
 

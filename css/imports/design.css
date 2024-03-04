@@ -22,7 +22,7 @@
     margin: 1rem 0;
 }
 
-@media (768px <= width <= 1025px) {
+@media (768px <= width <= 1024px) {
     .design {
         background-image: url('../../img/sections/design.jpg');
         /* background-position: left; */
@@ -36,7 +36,7 @@
     }
 }
 
-@media (1026px <= width) {
+@media (1025px <= width) {
     .design {
         background-image: url('../../img/sections/design.jpg');
         background-attachment: fixed !important;

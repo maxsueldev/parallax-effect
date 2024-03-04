@@ -33,7 +33,7 @@ header {
 }
 
 .lista-navbar li a {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -53,7 +53,7 @@ header .arrow {
     bottom: 10% !important;
 }
 
-@media (768px <= width <= 1025px) {
+@media (768px <= width <= 1024px) {
     header {
         background-image: url('../../img/sections/header.jpg');
     }   
@@ -68,9 +68,17 @@ header .arrow {
         justify-content: center;
         gap: 2.3rem;
     }
+
+    .lista-navbar li a {
+        transition: color .6s ease-in;
+    }
+
+    .lista-navbar li a:hover {
+        color: var(--border2);
+    }
 }
 
-@media (1026px <= width) {
+@media (1025px <= width) {
     header {
         background-image: url('../../img/sections/header.jpg');
         background-attachment: fixed !important;
@@ -88,6 +96,10 @@ header .arrow {
     }
 
     .lista-navbar li a {
-        font-size: 3rem;
+        transition: color .6s ease-in;
+    }
+
+    .lista-navbar li a:hover {
+        color: var(--border2);
     }
 }
