@@ -12,13 +12,13 @@ revelar.reveal('.efeito-sobre-txt', {
 revelar.reveal('.efeito-design-txt', {
     duration: 3000,
     distance: '90px',
-    origin: 'right'
+    origin: 'top'
 });
 
 revelar.reveal('.efeito-design-btn', {
     duration: 3000,
     distance: '90px',
-    origin: 'right',
+    origin: 'top',
     delay: 500
 });
 
