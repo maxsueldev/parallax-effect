@@ -26,11 +26,12 @@
     src: local('Nephilm.ttf'), url('../font/Nephilm.otf');
 }
 
-body, html {
+body {
     width: 100%;
     height: 100%;
     color: var(--branco);
     font-family: Nephilm, Arial, Sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -78,6 +79,13 @@ header, .sobre, .design, .curriculo, .arts, footer {
     background-size: cover;
     background-attachment: scroll;
     position: relative;
+}
+
+.efeito-sobre-txt, 
+.efeito-design-txt, .efeito-design-btn, 
+.efeito-curriculo-txt, .efeito-curriculo-btn,
+.efeito-footer-frase, .efeito-footer-autor {
+    visibility: hidden;
 }
 
 .content {
