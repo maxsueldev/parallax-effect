@@ -3,6 +3,7 @@
     background-position: left;
     height: fit-content !important;
     z-index: 1;
+    overflow: hidden;
 }
 
 .design::after {
